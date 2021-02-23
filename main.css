@@ -10,14 +10,15 @@
 }
 
 body{
-    width: 100%;
+    max-width: 100vw;
     background-color: whitesmoke;
+    overflow-x: hidden;
 }
 
 #home{
     width: 100vw;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: white;
 }
 h1{
     font-size: 96px;
@@ -39,18 +40,20 @@ p{
     padding: 2rem 0;
 }
 section{
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 header{
-    background-color: #D66429;
+    width: 100vw;
+    background-color: #E76C31;
     display: flex;
     justify-content: space-between;
 }
 header h2{
-    background-color: #1A835C;
+    background-color: #00A058;
     padding: 1rem 2rem;
     font-size: 32px;
+    color: white;
 }
 nav ul{
     display: flex;
@@ -66,11 +69,13 @@ nav a{
     font-size: 24px;
 }
 nav a:hover{
-    color: black;
+    color: white;
     transition: .5s;
 }
 
 .brand{
+    z-index: 1;
+    width: 40vw;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -87,16 +92,18 @@ nav a:hover{
 }
 
 #maps{
+    z-index: 1;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 10vw;
-    top: 20vh
 }
 
 /* REDES SOCIALES Y NRO CELULAR */
 
 #redes{
-    width: 100%;
-    background-color: #D66429;
+    width: 100vw;
+    background-color: #E76C31;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -135,7 +142,7 @@ nav a:hover{
 
 .paragraph{
     padding: 1rem;
-    background-color: #1A835C;
+    background-color: #00A058;
     grid-column: 1/2;
     grid-row: 1/4;
 }
@@ -149,7 +156,7 @@ nav a:hover{
 }
 
 .num1, .num2, .num3, .num4, .num5, .num6, .mision, .vision{
-    background-color: #1A835C;
+    background-color: #00A058;
     padding: 1rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.397);
 }
@@ -189,7 +196,7 @@ nav a:hover{
 /* SERVICIOSSSSSs */
 
 #products{
-    background-color: #D66429;
+    background-color: #E76C31;
 }
 
 .services{
@@ -211,7 +218,7 @@ nav a:hover{
 .service1 div, .service2 div, .service3 div, .service4 div{
     padding: 4rem 0;
     font-size: 5rem;
-    background-color: #1A835C;
+    background-color: #00A058;
     color: white;
 }
 
@@ -239,7 +246,7 @@ nav a:hover{
 
 #schedule{
     position: relative;
-    background-color: #D66429;
+    background-color: #E76C31;
     color: black;
 }
 
@@ -270,16 +277,22 @@ nav a:hover{
 
 
 @media only screen and (max-width: 600px){
-
     #maps{
         display: none;
     }
     .brand{
+        width: 90vw;
+        margin: auto;
         top: 50%;
-        transform: translateY(-90%);
+        transform: translateY(-50%);
+        left: 0;
+    }
+    .brand img{
+        width: 100%;
     }
 
     #redes{
+        z-index: 9999;
         display: flex;
         flex-direction: column;
         vertical-align: middle;
@@ -288,7 +301,6 @@ nav a:hover{
         width: 100vw;
     }
     #redes li{
-
         display: inherit;
     }
     .ig{
@@ -322,7 +334,7 @@ nav a:hover{
     }
     .paragraph{
         padding: 1rem;
-        background-color: #1A835C;
+        background-color: #00A058;
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -362,7 +374,7 @@ nav a:hover{
     .service1 div, .service2 div, .service3 div, .service4 div{
         padding: 4rem 0;
         font-size: 5rem;
-        background-color: #1A835C;
+        background-color: #00A058;
         color: white;
     }
 
@@ -396,11 +408,11 @@ nav a:hover{
         display: none;
     }
     .full-menu {
-        z-index: 99999;
+        z-index: 999;
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #D66429;
+        background-color: #E76C31;
         opacity: 0.5;
         transform: translateX(100%);
         transition: all 400ms ease-in;

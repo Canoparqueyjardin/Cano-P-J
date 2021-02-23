@@ -68,6 +68,9 @@ nav li{
 nav a{
     font-size: 24px;
 }
+.te{
+    font-size: 24px;
+}
 nav a:hover{
     color: white;
     transition: .5s;
